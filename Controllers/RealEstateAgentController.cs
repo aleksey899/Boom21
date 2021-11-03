@@ -35,8 +35,5 @@ namespace Employment.Controllers
        {
          return str;// заключение договора
        }
-     
     }
-    
 }
-   
