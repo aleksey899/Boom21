@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-21T09:25:57.037Z" agent="5.0 (Windows)" etag="YVB2e1wA-riq4SoO7w7x" version="15.5.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-03T13:34:25.493Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 OPR/80.0.4170.61 (Edition Yx GX)" etag="mQaH4kk3Zxx_tqchqvGm" version="15.5.8" type="github" pages="2">
   <diagram id="1LYEiCd0jX0eeRkv5ywO" name="Page-1">
-    <mxGraphModel dx="1221" dy="1823" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="997" dy="1749" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -140,7 +140,7 @@
         <mxCell id="ukAMqeBF27tBX4bTyb1z-54" value="Заключает договор&lt;br&gt;о продаже своей недвижимости" style="whiteSpace=wrap;html=1;rounded=0;strokeColor=#6c8ebf;fillColor=#dae8fc;" parent="1" vertex="1">
           <mxGeometry x="920" y="940" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ukAMqeBF27tBX4bTyb1z-56" value="Журнал продаж" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" parent="1" vertex="1">
+        <mxCell id="ukAMqeBF27tBX4bTyb1z-56" value="Продажа&lt;br&gt;" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" parent="1" vertex="1">
           <mxGeometry x="930" y="1169" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="NFxwPHQR4oBNKtsv3OAb-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ukAMqeBF27tBX4bTyb1z-58" target="NFxwPHQR4oBNKtsv3OAb-11" edge="1">
@@ -167,10 +167,10 @@
         <mxCell id="NFxwPHQR4oBNKtsv3OAb-3" value="Заключает договор" style="whiteSpace=wrap;html=1;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" parent="1" vertex="1">
           <mxGeometry x="1300" y="-70" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="NFxwPHQR4oBNKtsv3OAb-5" value="Журнал продаж" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" parent="1" vertex="1">
+        <mxCell id="NFxwPHQR4oBNKtsv3OAb-5" value="Продажа&lt;br&gt;" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" parent="1" vertex="1">
           <mxGeometry x="1310" y="200" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Z2e167N5dwhoWMd68_NS-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NFxwPHQR4oBNKtsv3OAb-7" target="Z2e167N5dwhoWMd68_NS-1">
+        <mxCell id="Z2e167N5dwhoWMd68_NS-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="NFxwPHQR4oBNKtsv3OAb-7" target="Z2e167N5dwhoWMd68_NS-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="NFxwPHQR4oBNKtsv3OAb-7" value="Оплачивает" style="whiteSpace=wrap;html=1;rounded=0;strokeColor=#d6b656;fillColor=#fff2cc;" parent="1" vertex="1">
@@ -215,7 +215,7 @@
         <mxCell id="NFxwPHQR4oBNKtsv3OAb-28" value="Счет агентства" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" parent="1" vertex="1">
           <mxGeometry x="730" y="1050" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="NFxwPHQR4oBNKtsv3OAb-34" value="Журнал продаж" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" parent="1" vertex="1">
+        <mxCell id="NFxwPHQR4oBNKtsv3OAb-34" value="Продажа&lt;br&gt;" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" parent="1" vertex="1">
           <mxGeometry x="970" y="720" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="NFxwPHQR4oBNKtsv3OAb-36" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="NFxwPHQR4oBNKtsv3OAb-15" edge="1">
@@ -472,7 +472,7 @@
             <mxPoint x="1080" y="1060" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Z2e167N5dwhoWMd68_NS-1" value="Счет агентства" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" vertex="1" parent="1">
+        <mxCell id="Z2e167N5dwhoWMd68_NS-1" value="Счет агентства" style="html=1;dashed=0;whitespace=wrap;shape=partialRectangle;right=0;" parent="1" vertex="1">
           <mxGeometry x="1680" y="200" width="100" height="30" as="geometry" />
         </mxCell>
       </root>
