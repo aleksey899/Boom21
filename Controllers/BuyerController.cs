@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
     [ApiController]
     [Route("/Buyer")]
     public class BuyerController : ControllerBase
-    {
+    
         [HttpPost("Viewingrealestate")]
         public string Viewingrealestate(string str)
         {
