@@ -8,34 +8,34 @@ using Microsoft.Extensions.Logging;
        namespace Employment.Controllers
     {
     [ApiController]
-    [Route("/Buyer")]
+    [Route("/BuyerController")]
     public class BuyerController : ControllerBase
     
-        [HttpPost("Viewingrealestate")]
-        public string Viewingrealestate(string str)
+        [HttpPost("ViewingRealEstate")]
+        public string ViewingRealEstate(string str)
         {
             return str;// просмотр продающуюся объектов недвижимости
         }
 
-        [HttpPost("Viewingrealestate")]
-        public string Viewingrealestate(string str)
+        [HttpPost("ViewingRealEstate")]
+        public string ViewingRealEstate(string str)
         {
             return str;// просмотр выбранной недвижимости
         }
 
-        [HttpPost("Choosingahouse")]
-        public string Choosingahouse(string str)
+        [HttpPost("ChoosingHouse")]
+        public string ChoosingHouse(string str)
         {
             return str;// выбор дома
         }
 
-        [HttpPost("Payment")]
+        [HttpPost("PayMent")]
         public string Payment(string str)
         {
             return str;
         }
-        [HttpPost("Conclusionofthecontract")]
-        public string Conclusionofthecontract(string str)
+        [HttpPost("ConclusionOfTheContract")]
+        public string ConclusionOfTheContract(string str)
         {
             return str;// заключение договора
         }
