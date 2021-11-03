@@ -8,21 +8,21 @@ using Microsoft.Extensions.Logging;
 namespace Employment.Controllers
 {
     [ApiController]
-    [Route("/Seller")]
+    [Route("/SellerController")]
     public class SellerController : ControllerBase
 
-    [HttpPost("Realestateplacement")]
-    public string Realestateplacement(string str)
+    [HttpPost("RealEstatePlacement")]
+    public string RealEstatePlacement(string str)
     {
         return str;// размещение недвижимости для продажи
     }
-    [HttpPost("Providesapreview")]
-    public string Providesapreview(string str)
+    [HttpPost("ProvidesPreview")]
+    public string ProvidesPreview(string str)
     {
         return str;// предоставление возможности просмотра недвижимости
     }
-    [HttpPost("Conclusionofthecontract")]
-    public string Conclusionofthecontract(string str)
+    [HttpPost("ConclusionOfTheContract")]
+    public string ConclusionOfTheContract(string str)
     {
         return str;// заключение договора
 
