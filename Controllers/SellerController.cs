@@ -12,21 +12,22 @@ namespace Employment.Controllers
     public class SellerController : ControllerBase
     {
  
-    [HttpPost("RealEstatePlacement")]
-    public string RealEstatePlacement(string str)
-    {
-        return str;// размещение недвижимости для продажи
-    }
-    [HttpPost("ProvidesPreview")]
-    public string ProvidesPreview(string str)
-    {
-        return str;// предоставление возможности просмотра недвижимости
-    }
-    [HttpPost("ConclusionOfTheContract")]
-    public string ConclusionOfTheContract(string str)
-    {
-        return str;// заключение договора
-    }
+        [HttpPost("RealEstatePlacement")]
+        public string RealEstatePlacement(string str)
+        {
+          return str;// размещение недвижимости для продажи
+        }
+        [HttpPost("ProvidesPreview")]
+        public string ProvidesPreview(string str)
+        {
+          return str;// предоставление возможности просмотра недвижимости
+        }
+        [HttpPost("ConclusionOfTheContract")]
+        public string ConclusionOfTheContract(string str)
+        {
+          return str;// заключение договора
+        }
     
    }
+   
 } 
