@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
        namespace Employment.Controllers
-    {
+  {
     [ApiController]
     [Route("/BuyerController")]
     public class BuyerController : ControllerBase
@@ -41,4 +41,6 @@ using Microsoft.Extensions.Logging;
         }
       
       }
+      
     }   
+
