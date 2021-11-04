@@ -12,30 +12,31 @@ namespace Employment.Controllers
     public class RealEstateAgentController : ControllerBase
     {
    
-      [HttpPost("ListOfProperties")]
-      public string ListOfProperties(string str)
-     {
-        return str;// предоставление списка продающуеся недвижимости
-     }
+          [HttpPost("ListOfProperties")]
+           public string ListOfProperties(string str)
+          {
+            return str;// предоставление списка продающуеся недвижимости
+          }
 
-      [HttpPost("PermissionToView")]
-      public string PermissionToView(string str)
-     {
-        return str;// получение разрешения на просмотр дома
-     }
+         [HttpPost("PermissionToView")]
+         public string PermissionToView(string str)
+         {
+           return str;// получение разрешения на просмотр дома
+         }
 
-      [HttpPost("RealestateDemonstrations")]
-      public string RealestateDemonstrations(string str)
-     {
-        return str;// демонстрация недвижимости
-     }
+        [HttpPost("RealestateDemonstrations")]
+        public string RealestateDemonstrations(string str)
+        {
+          return str;// демонстрация недвижимости
+        }
 
-      [HttpPost("ConclusionOfTheContract")]
-      public string ConclusionOfTheContract(string str)
-     {
-        return str;// заключение договора
-     }
+        [HttpPost("ConclusionOfTheContract")]
+        public string ConclusionOfTheContract(string str)
+       {
+         return str;// заключение договора
+       }
      
     }
+    
 }
    
