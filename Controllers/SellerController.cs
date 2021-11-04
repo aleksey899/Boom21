@@ -10,7 +10,8 @@ namespace Employment.Controllers
     [ApiController]
     [Route("/SellerController")]
     public class SellerController : ControllerBase
-
+    {
+ 
     [HttpPost("RealEstatePlacement")]
     public string RealEstatePlacement(string str)
     {
@@ -25,6 +26,7 @@ namespace Employment.Controllers
     public string ConclusionOfTheContract(string str)
     {
         return str;// заключение договора
-
     }
+    
+   }
 } 
