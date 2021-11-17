@@ -64,5 +64,5 @@
 # Заключение
 
 # Список литературы
-Ссылка на правила учета недвижимости - [https://assistentus.ru/buhuchet/obektov-nedvizhimosti/] 
+Ссылка на правила учета недвижимости - https://assistentus.ru/buhuchet/obektov-nedvizhimosti/ 
 
