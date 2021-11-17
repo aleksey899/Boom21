@@ -10,31 +10,36 @@ namespace Employment.Controllers
     [ApiController]
     [Route("/MonetaryAccounting")]
     public class MonetaryAccountingController : ControllerBase
-
-    [HttpPost("Balanceid")]
-    public string Balanceid(string str)
     {
-        return str;// Идентификатор баланса
+
+        [HttpPut()]
+        public string Create(string str)
+        {
+            return str;
+        }
+
+        [HttpGet()]
+        public string Read(string str)
+        {
+            return str;
+        }
+
+        [HttpPatch()]
+        public string Update(string str)
+        {
+            return str;
+        }
+
+        [HttpDelete()]
+        public string Delete(string str)
+        {
+            return str;
+        }
+
+
+
     }
 
-    [HttpPost("Debit ")]
-    public string Debit(string str)
-    {
-        return str;// Дебит
-    }
-
-
-    [HttpPost("Сredit")]
-    public string Сredit(string str)
-    {
-        return str;// Кредит
-    }
-
-    [HttpPost("AgencyAccountid")]
-    public string AgencyAccountid(string str)
-    {
-        return str;// Идентификатор учетной записи агентства
-    }
 
 }
    

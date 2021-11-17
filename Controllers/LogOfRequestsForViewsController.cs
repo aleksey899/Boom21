@@ -10,29 +10,33 @@ namespace Employment.Controllers
     [ApiController]
     [Route("/LogOfRequestsForViews")]
     public class LogOfRequestsForViewsController : ControllerBase
-
-    [HttpPost("ListClientId")]
-    public string ListClientId(string str)
     {
-        return str;// Идентификатор списка клиентов
-    }
 
-    [HttpPost("EstateАgentId ")]
-    public string EstateАgentId(string str)
-    {
-        return str;// Агенты по недвижимости
-    }
+        [HttpPut()]
+        public string Create(string str)
+        {
+            return str;
+        }
 
-    [HttpPost("CustomerId")]
-    public string CustomerId(string str)
-    {
-        return str;// Идентификатор клиента
-    }
+        [HttpGet()]
+        public string Read(string str)
+        {
+            return str;
+        }
 
-    [HttpPost("SellerId")]
-    public string SellerId(string str)
-    {
-        return str;// Идентификатор продавца
+        [HttpPatch()]
+        public string Update(string str)
+        {
+            return str;
+        }
+
+        [HttpDelete()]
+        public string Delete(string str)
+        {
+            return str;
+        }
+
+
     }
 
 

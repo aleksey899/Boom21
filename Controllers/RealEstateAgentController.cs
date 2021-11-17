@@ -11,7 +11,6 @@ namespace Employment.Controllers
     [Route("/RealEstateAgentController")]
     public class RealEstateAgentController : ControllerBase
     {
-   
           [HttpPost("ListOfProperties")]
            public string ListOfProperties(string str)
           {
@@ -35,5 +34,30 @@ namespace Employment.Controllers
        {
          return str;// заключение договора
        }
+
+        [HttpPut()]
+        public string Create(string str)
+        {
+            return str;
+        }
+
+        [HttpGet()]
+        public string Read(string str)
+        {
+            return str;
+        }
+
+        [HttpPatch()]
+        public string Update(string str)
+        {
+            return str;
+        }
+
+        [HttpDelete()]
+        public string Delete(string str)
+        {
+            return str;
+        }
+
     }
 }

@@ -11,34 +11,33 @@ namespace Employment.Controllers
     [Route("/Sale")]
     public class SaleController : ControllerBase
 
-    [HttpPost("ListDepositsId")]
-    public string ListDepositsId(string str)
     {
-        return str;// Идентификатор Списка Депозитов
-    }
 
-    [HttpPost("ConcludedСontracts")]
-    public string ConcludedСontracts(string str)
-    {
-        return str;// Заключенные контракты
-    }
+        [HttpPut()]
+        public string Create(string str)
+        {
+            return str;
+        }
+
+        [HttpGet()]
+        public string Read(string str)
+        {
+            return str;
+        }
+
+        [HttpPatch()]
+        public string Update(string str)
+        {
+            return str;
+        }
+
+        [HttpDelete()]
+        public string Delete(string str)
+        {
+            return str;
+        }
 
 
-    [HttpPost("ListСlients")]
-    public string ListСlients(string str)
-    {
-        return str;// Список клиентов
-    }
-    [HttpPost("CustomerId")]
-    public string CustomerId(string str)
-    {
-            return str;// Идентификатор клиента
-    }
-
-    [HttpPost("Transaction")]
-    public string Transaction(string str)
-    {
-        return str;// Операция
     }
 
 

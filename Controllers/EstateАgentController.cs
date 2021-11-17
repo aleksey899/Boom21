@@ -10,30 +10,33 @@ namespace Employment.Controllers
     [ApiController]
     [Route("/EstateАgent")]
     public class EstateАgentController : ControllerBase
-
-    [HttpPost("EstateАgentid")]
-     public string EstateАgentid(string str)
     {
-        return str;// Идентификатор агента недвижимости
-    }
 
-    [HttpPost("FirstName")]
-    public string FirstName(string str)
-    {
-        return str;// Имя
-    }
+        [HttpPut()]
+        public string Create(string str)
+        {
+            return str;
+        }
+
+        [HttpGet()]
+        public string Read(string str)
+        {
+            return str;
+        }
+
+        [HttpPatch()]
+        public string Update(string str)
+        {
+            return str;
+        }
+
+        [HttpDelete()]
+        public string Delete(string str)
+        {
+            return str;
+        }
 
 
-    [HttpPost("Phone")]
-    public string Phone(string str)
-    {
-        return str;// Телефон
-    }
-
-    [HttpPost("ListClient")]
-    public string ListClient(string str)
-    {
-        return str;// Список клиентов
     }
 
 }

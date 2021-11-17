@@ -10,36 +10,36 @@ namespace Employment.Controllers
     [ApiController]
     [Route("/Customer")]
     public class CustomerController : ControllerBase
-
-    [HttpPost("CustomerId")]
-     public string CustomerId(string str)
     {
-        return str;// Идентификатор клиента
-    }
+        [HttpPut()]
+        public string Create(string str)
+        {
+            return str;
+        }
 
-    [HttpPost("FirstName")]
-    public string FirstName(string str)
-    {
-        return str;// Имя
-    }
+        [HttpGet()]
+        public string Read(string str)
+        {
+            return str;
+        }
 
-    [HttpPost("LastName")]
-    public string LastName(string str)
-    {
-        return str;// Фамилия
-    }
+        [HttpPatch()]
+        public string Update(string str)
+        {
+            return str;
+        }
 
-    [HttpPost("Phone")]
-    public string Phone(string str)
-    {
-        return str;// Телефон
-    }
+        [HttpDelete()]
+        public string Delete(string str)
+        {
+            return str;
+        }
 
-    [HttpPost("RealEstatePreference")]
-    public string RealEstatePreference(string str)
-    {
-        return str;// Предпочтение Недвижимости
+
+
+
     }
+    
 
 }
    

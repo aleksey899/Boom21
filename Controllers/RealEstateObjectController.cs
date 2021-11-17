@@ -10,31 +10,36 @@ namespace Employment.Controllers
     [ApiController]
     [Route("/RealEstateObject")]
     public class RealEstateObjectController : ControllerBase
-
-    [HttpPost("CadastralNumber")]
-     public string CadastralNumber(string str)
     {
-        return str;// Кадастровый номер
+
+        [HttpPut()]
+        public string Create(string str)
+        {
+            return str;
+        }
+
+        [HttpGet()]
+        public string Read(string str)
+        {
+            return str;
+        }
+
+        [HttpPatch()]
+        public string Update(string str)
+        {
+            return str;
+        }
+
+        [HttpDelete()]
+        public string Delete(string str)
+        {
+            return str;
+        }
+
+
     }
 
-    [HttpPost("CustomerId")]
-    public string CustomerId(string str)
-    {
-        return str;// Идентификатор клиента
-    }
 
-
-    [HttpPost("Location")]
-    public string Location(string str)
-    {
-        return str;// Местоположение
-    }
-
-    [HttpPost("EstateАgentId")]
-    public string EstateАgentId(string str)
-    {
-        return str;// Идентификатор агентов по недвижимости
-    }
 
 }
    
