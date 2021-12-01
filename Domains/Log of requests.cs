@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Boom21.repository;
 
-namespace LogOfRequestsFor.Domains
+namespace Boom21.Domains
 {
 
-    public class LogOfRequestsFor
+    public class LogOfRequestsFor:MVID
     {
         public int ListClientId { get; set; }
 

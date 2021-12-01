@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Boom21.repository;
 
-namespace Transaction.Domains
+namespace Boom21.Domains
 {
 
-    public class Transaction
+    public class Transaction:MVID
     {
         public int Transactionid { get; set; }
 
@@ -16,7 +17,7 @@ namespace Transaction.Domains
 
         public decimal Balance { get; set; }
 
-        Transaction(int Transactionid, int OperationLog, decimal Balance)
+        public Transaction(int transactionid, int operationLog, decimal balance)
         {
             this.Transactionid = Transactionid;
             this.OperationLog = OperationLog;

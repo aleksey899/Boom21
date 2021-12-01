@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Boom21.repository;
 
-namespace Estate픤ent.Domains
+namespace Boom21.Domains
 {
 
-    public class Estate픤ent
+    public class Estate픤ent:MVID
     {
         public int Estate픤entid { get; set; }
 

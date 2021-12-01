@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Boom21.repository;
 
-namespace LogOfRequestsFor.Domains
+namespace Boom21.Domains
 {
 
-    public class MonetaryAccounting
+    public class MonetaryAccounting:MVID
     {
         public int Balanceid { get; set; }
 

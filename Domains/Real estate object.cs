@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Boom21.repository;
 
-namespace LogOfRequestsFor.Domains
+namespace Boom21.Domains
 {
 
-    public class MonetaryAccounting
+    public class RealEstateObject :MVID
     {
         public int Balanceid { get; set; }
 
@@ -18,7 +19,7 @@ namespace LogOfRequestsFor.Domains
 
         public int AgencyAccountid { get; set; }
 
-        MonetaryAccounting(int Balanceid, decimal Debit, decimal Ñredit, int AgencyAccountid)
+        RealEstateObject (int Balanceid, decimal Debit, decimal Ñredit, int AgencyAccountid)
         {
             this.Balanceid = Balanceid;
             this.Debit = Debit;

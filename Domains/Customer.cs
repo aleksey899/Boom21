@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Boom21.repository;
 
-namespace Customer.Domains
+namespace Boom21.Domains
 {
 
-    public class Customer
+    public class Customer: MVID
     {
         public int Customerid { get ; set ; }
         

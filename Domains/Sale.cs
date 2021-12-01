@@ -4,11 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Boom21.repository;
 
-namespace RealEstateObject.Domains
+namespace Boom21.Domains
 {
 
-    public class RealEstateObject
+    public class Sale: MVID
     {
         public int CadastralNumber { get; set; }
 
@@ -18,7 +19,7 @@ namespace RealEstateObject.Domains
 
         public int Estate¿gentId { get; set; }
 
-        RealEstateObject(int CadastralNumber, int CustomerId, string Location, int Estate¿gentId)
+        public Sale (int CadastralNumber, int CustomerId, string Location, int Estate¿gentId)
         {
             this.CadastralNumber = CadastralNumber;
             this.CustomerId = CustomerId;
