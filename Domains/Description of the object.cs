@@ -9,7 +9,7 @@ using Boom21.repository;
 namespace Boom21.Domains
 {
 
-    public class DescriptionOfTheObject:MVID
+    public class DescriptionOfTheObject:IIdentifier
     {
         public int DescriptionOfTheObjectt { get; set; }
 

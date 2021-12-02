@@ -9,7 +9,7 @@ using Boom21.repository;
 namespace Boom21.Domains
 {
 
-    public class Seller: MVID
+    public class Seller: IIdentifier
     {
         public int Sellerid { get; set; }
 

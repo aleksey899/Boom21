@@ -9,7 +9,7 @@ using Boom21.repository;
 namespace Boom21.Domains
 {
 
-    public class Sale: MVID
+    public class Sale: IIdentifier
     {
         public int CadastralNumber { get; set; }
 
@@ -17,14 +17,14 @@ namespace Boom21.Domains
 
         public string Location { get; set; }
 
-        public int EstateﾀgentId { get; set; }
+        public int Estateﾐ身entId { get; set; }
 
-        public Sale (int CadastralNumber, int CustomerId, string Location, int EstateﾀgentId)
+        public Sale (int CadastralNumber, int CustomerId, string Location, int Estateﾐ身entId)
         {
             this.CadastralNumber = CadastralNumber;
             this.CustomerId = CustomerId;
             this.Location = Location;
-            this.EstateﾀgentId = EstateﾀgentId;
+            this.Estateﾐ身entId = Estateﾐ身entId;
         }
 
 

@@ -13,12 +13,6 @@ namespace Employment.Controllers
         [HttpPost("ViewingRealEstate")]
         public string ViewingRealEstate(string str)
         {
-            return str;// просмотр продающуюся объектов недвижимости
-        }
-
-        [HttpPost("ViewingRealEstate")]
-        public string ViewingRealEstate(string str)
-        {
             return str;// просмотр выбранной недвижимости
         }
 

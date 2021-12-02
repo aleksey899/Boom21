@@ -9,7 +9,7 @@ using Boom21.repository;
 namespace Boom21.Domains
 {
 
-    public class Transaction:MVID
+    public class Transaction:IIdentifier
     {
         public int Transactionid { get; set; }
 
