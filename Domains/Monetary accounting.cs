@@ -11,6 +11,7 @@ namespace Boom21.Domains
 
     public class MonetaryAccounting:IIdentifier
     {
+        public int Id { get; set; }
         public int Balanceid { get; set; }
 
         public decimal Debit { get; set; }

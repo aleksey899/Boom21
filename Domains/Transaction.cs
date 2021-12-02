@@ -11,6 +11,7 @@ namespace Boom21.Domains
 
     public class Transaction:IIdentifier
     {
+        public int Id { get; set; }
         public int Transactionid { get; set; }
 
         public int OperationLog { get; set; }

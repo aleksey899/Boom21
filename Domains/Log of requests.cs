@@ -11,6 +11,7 @@ namespace Boom21.Domains
 
     public class LogOfRequestsFor:IIdentifier
     {
+        public int Id { get; set; }
         public int ListClientId { get; set; }
 
         public int EstateАgentId { get; set; }

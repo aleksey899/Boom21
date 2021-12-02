@@ -11,6 +11,7 @@ namespace Boom21.Domains
 
     public class DescriptionOfTheObject:IIdentifier
     {
+        public int Id { get; set; }
         public int DescriptionOfTheObjectt { get; set; }
 
         public decimal Prise { get; set; }

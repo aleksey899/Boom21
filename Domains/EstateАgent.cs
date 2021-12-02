@@ -11,6 +11,7 @@ namespace Boom21.Domains
 
     public class EstateАgent:IIdentifier
     {
+        public int Id { get; set; }
         public int EstateАgentid { get; set; }
 
         public string FirstName { get; set; }

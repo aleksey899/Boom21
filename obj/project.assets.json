@@ -193,19 +193,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {}
+    "C:\\Users\\Михаил\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\rsreu\\03_practice\\035\\Kulibaba\\Boom21.csproj",
+      "projectUniqueName": "C:\\Users\\Михаил\\OneDrive\\Документы\\GitHub\\Boom21\\Boom21.csproj",
       "projectName": "Boom21",
-      "projectPath": "D:\\rsreu\\03_practice\\035\\Kulibaba\\Boom21.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\rsreu\\03_practice\\035\\Kulibaba\\obj\\",
+      "projectPath": "C:\\Users\\Михаил\\OneDrive\\Документы\\GitHub\\Boom21\\Boom21.csproj",
+      "packagesPath": "C:\\Users\\Михаил\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Михаил\\OneDrive\\Документы\\GitHub\\Boom21\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Михаил\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -254,7 +254,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

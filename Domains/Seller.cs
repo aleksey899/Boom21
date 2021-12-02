@@ -11,6 +11,7 @@ namespace Boom21.Domains
 
     public class Seller: IIdentifier
     {
+        public int Id { get; set; }
         public int Sellerid { get; set; }
 
         public string FirstName { get; set; }
