@@ -9,8 +9,9 @@ using Boom21.repository;
 namespace Boom21.Domains
 {
 
-    public class AgencyAccount: MVID
+    public class AgencyAccount: IIdentifier
     {
+        public int Id { get; set; }
         public int AgencyAccountid { get; set; }
 
         public int OperationNumber { get; set; }

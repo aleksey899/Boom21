@@ -9,20 +9,20 @@ using Boom21.repository;
 namespace Boom21.Domains
 {
 
-    public class LogOfRequestsFor:MVID
+    public class LogOfRequestsFor:IIdentifier
     {
         public int ListClientId { get; set; }
 
-        public int EstateﾀgentId { get; set; }
+        public int Estateﾐ身entId { get; set; }
 
         public int CustomerId { get; set; }
 
         public int SellerId { get; set; }
 
-        LogOfRequestsFor(int Estateﾀgentid, int ListClientId, int CustomerId, int SellerId)
+        LogOfRequestsFor(int Estateﾐ身entid, int ListClientId, int CustomerId, int SellerId)
         {
             this.ListClientId = ListClientId;
-            this.EstateﾀgentId = EstateﾀgentId;
+            this.Estateﾐ身entId = Estateﾐ身entId;
             this.CustomerId = CustomerId;
             this.SellerId = SellerId;
         }

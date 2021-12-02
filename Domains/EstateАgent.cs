@@ -9,9 +9,9 @@ using Boom21.repository;
 namespace Boom21.Domains
 {
 
-    public class Estateﾀgent:MVID
+    public class Estateﾐ身ent:IIdentifier
     {
-        public int Estateﾀgentid { get; set; }
+        public int Estateﾐ身entid { get; set; }
 
         public string FirstName { get; set; }
 
@@ -19,9 +19,9 @@ namespace Boom21.Domains
 
         public int ListClient { get; set; }
 
-        Estateﾀgent(int Estateﾀgentid, string FirstName,  string Phone, int ListClient)
+        Estateﾐ身ent(int Estateﾐ身entid, string FirstName,  string Phone, int ListClient)
         {
-            this.Estateﾀgentid = Estateﾀgentid;
+            this.Estateﾐ身entid = Estateﾐ身entid;
             this.FirstName = FirstName;
             this.Phone = Phone;
             this.ListClient = ListClient;

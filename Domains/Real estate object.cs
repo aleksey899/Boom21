@@ -9,21 +9,21 @@ using Boom21.repository;
 namespace Boom21.Domains
 {
 
-    public class RealEstateObject :MVID
+    public class RealEstateObject :IIdentifier
     {
         public int Balanceid { get; set; }
 
         public decimal Debit { get; set; }
 
-        public decimal 裷edit { get; set; }
+        public decimal 小redit { get; set; }
 
         public int AgencyAccountid { get; set; }
 
-        RealEstateObject (int Balanceid, decimal Debit, decimal 裷edit, int AgencyAccountid)
+        RealEstateObject (int Balanceid, decimal Debit, decimal 小redit, int AgencyAccountid)
         {
             this.Balanceid = Balanceid;
             this.Debit = Debit;
-            this.裷edit = 裷edit;
+            this.小redit = 小redit;
             this.AgencyAccountid = AgencyAccountid;
         }
 

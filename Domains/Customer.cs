@@ -9,7 +9,7 @@ using Boom21.repository;
 namespace Boom21.Domains
 {
 
-    public class Customer: MVID
+    public class Customer: IIdentifier
     {
         public int Customerid { get ; set ; }
         
