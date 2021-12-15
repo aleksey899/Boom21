@@ -17,11 +17,11 @@ namespace Boom21.Domains
         public int OperationNumber { get; set; }
 
 
-        AgencyAccount(int AgencyAccountid, int OperationNumber)
+        public AgencyAccount(int agencyAccountid, int operationNumber, int Id)
         {
-            this.AgencyAccountid = AgencyAccountid;
-            this.OperationNumber = OperationNumber;
-           
+            AgencyAccountid = agencyAccountid;
+            OperationNumber = operationNumber;
+
         }
 
 

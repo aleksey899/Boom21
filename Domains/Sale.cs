@@ -20,12 +20,13 @@ namespace Boom21.Domains
 
         public int EstateАgentId { get; set; }
 
-        public Sale (int CadastralNumber, int CustomerId, string Location, int EstateАgentId)
+        public Sale (int cadastralNumber, int customerId, string location, int estateАgentId, int Id)
         {
-            this.CadastralNumber = CadastralNumber;
-            this.CustomerId = CustomerId;
-            this.Location = Location;
-            this.EstateАgentId = EstateАgentId;
+            CadastralNumber = cadastralNumber;
+            CustomerId = customerId;
+            Location = location;
+            EstateАgentId = estateАgentId;
+            
         }
 
 

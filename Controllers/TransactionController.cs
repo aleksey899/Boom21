@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Boom21.repository;
+using Boom21.Domains;
 
 namespace Employment.Controllers
 {
