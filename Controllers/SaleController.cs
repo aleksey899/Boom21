@@ -13,30 +13,41 @@ namespace Employment.Controllers
 
     {
 
-        [HttpPut]
-        public string Create(string str)
+        [HttpPut("Create")]
+        public bool Create(Sale sale)
         {
-            return str;
+            return Storages.SaleStorage.Create(sale); ;
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public EstateАgent Read(int Id)
         {
-            return str;
+            return Storages.SaleStorage.Read(Id);
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public EstateАgent Update(Sale sale)
         {
-            return str;
+            return Storages.SaleStorage.Update(sale);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.SaleStorage.Delete(Id);
         }
 
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.SaleStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.SaleStorage.ReadFromXmlFile();
+        }
 
     }
 

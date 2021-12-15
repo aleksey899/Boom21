@@ -12,30 +12,41 @@ namespace Employment.Controllers
     public class AgencyAccountController : ControllerBase
     {
 
-        [HttpPut]
-        public string Create(string str)
+        [HttpPut("Create")]
+        public bool Create(AgencyAccount agencyAccount)
         {
-            return str;
+            return Storages.AgencyAccountStorage.Create(agencyAccount); ;
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public AgencyAccount Read(int Id)
         {
-            return str;
+            return Storages.AgencyAccountStorage.Read(Id);
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public AgencyAccount Update(AgencyAccount agencyAccount)
         {
-            return str;
+            return Storages.AgencyAccountStorage.Update(agencyAccount);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.AgencyAccountStorage.Delete(Id);
         }
 
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.AgencyAccountStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.AgencyAccountStorage.ReadFromXmlFile();
+        }
 
     }
 } 

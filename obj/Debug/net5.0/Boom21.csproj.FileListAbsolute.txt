@@ -11,7 +11,6 @@ C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\bin\Debug\net5.0
 C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\obj\Debug\net5.0\Boom21.csprojAssemblyReference.cache
 C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\obj\Debug\net5.0\Boom21.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\obj\Debug\net5.0\Boom21.AssemblyInfoInputs.cache
 C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\obj\Debug\net5.0\Boom21.AssemblyInfo.cs
@@ -27,3 +26,4 @@ C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\obj\Debug\net5.0
 C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\obj\Debug\net5.0\ref\Boom21.dll
 C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\obj\Debug\net5.0\Boom21.pdb
 C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\obj\Debug\net5.0\Boom21.genruntimeconfig.cache
+C:\Users\Михаил\OneDrive\Документы\GitHub\Boom21\obj\Debug\net5.0\Boom21.csproj.AssemblyReference.cache

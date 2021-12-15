@@ -12,29 +12,42 @@ namespace Employment.Controllers
     public class EstateАgentController : ControllerBase
     {
 
-        [HttpPut]
-        public string Create(string str)
+        [HttpPut("Create")]
+        public bool Create(EstateАgent estateАgent)
         {
-            return str;
+            return Storages.EstateАgentStorage.Create(estateАgent); ;
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public EstateАgent Read(int Id)
         {
-            return str;
+            return Storages.EstateАgentStorage.Read(Id);
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public EstateАgent Update(EstateАgent estateАgent)
         {
-            return str;
+            return Storages.EstateАgentStorage.Update(estateАgent);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.EstateАgentStorage.Delete(Id);
         }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.EstateАgentStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.EstateАgentStorage.ReadFromXmlFile();
+        }
+
 
 
     }

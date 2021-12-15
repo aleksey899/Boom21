@@ -11,28 +11,40 @@ namespace Employment.Controllers
     [Route("/Customer")]
     public class CustomerController : ControllerBase
     {
-        [HttpPut]
-        public string Create(string str)
+        [HttpPut("Create")]
+        public bool Create(Customer customer)
         {
-            return str;
+            return Storages.CustomerStorage.Create(customer); ;
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public Customer Read(int Id)
         {
-            return str;
+            return Storages.CustomerStorage.Read(Id);
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public Customer Update(Customer customer)
         {
-            return str;
+            return Storages.CustomerStorage.Update(customer);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.CustomerStorage.Delete(Id);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.CustomerStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.CustomerStorage.ReadFromXmlFile();
         }
 
 

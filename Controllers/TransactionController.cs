@@ -6,47 +6,40 @@ namespace Employment.Controllers
     [Route("/Transaction")]
     public class TransactionController : ControllerBase
     {
-        [HttpPost("Transactionid")]
-        public string Transactionid(string str)
+        [HttpPut("Create")]
+        public bool Create(Transaction transaction)
         {
-            return str; // Идентификатор транзакции
+            return Storages.TransactionStorage.Create(transaction); ;
         }
 
-        [HttpPost("OperationLog")]
-        public string OperationLog(string str)
+        [HttpGet("Read")]
+        public EstateАgent Read(int Id)
         {
-            return str; // Журнал операций
+            return Storages.TransactionStorage.Read(Id);
         }
 
-
-        [HttpPost("Balance")]
-        public string Balance(string str)
+        [HttpPut("Update")]
+        public EstateАgent Update(Transaction transaction)
         {
-            return str; // Баланс
+            return Storages.TransactionStorage.Update(transaction);
         }
 
-        [HttpPut]
-        public string Create(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.TransactionStorage.Delete(Id);
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
         {
-            return str;
+            Storages.TransactionStorage.SaveToXmlFile();
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
         {
-            return str;
-        }
-
-        [HttpDelete]
-        public string Delete(string str)
-        {
-            return str;
+            Storages.TransactionStorage.ReadFromXmlFile();
         }
     }
 }

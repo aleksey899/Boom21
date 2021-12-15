@@ -11,30 +11,42 @@ namespace Employment.Controllers
     [Route("/LogOfRequestsForViews")]
     public class LogOfRequestsForViewsController : ControllerBase
     {
-
-        [HttpPut]
-        public string Create(string str)
+        [HttpPut("Create")]
+        public bool Create(LogOfRequestsForViews logOfRequestsForViews)
         {
-            return str;
+            return Storages.LogOfRequestsForViewsStorage.Create(logOfRequestsForViews); ;
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public EstateАgent Read(int Id)
         {
-            return str;
+            return Storages.LogOfRequestsForViewsStorage.Read(Id);
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public EstateАgent Update(LogOfRequestsForViews logOfRequestsForViews)
         {
-            return str;
+            return Storages.LogOfRequestsForViewsStorage.Update(logOfRequestsForViews);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.LogOfRequestsForViewsStorage.Delete(Id);
         }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.LogOfRequestsForViewsStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.LogOfRequestsForViewsStorage.ReadFromXmlFile();
+        }
+
 
 
     }

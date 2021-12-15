@@ -12,28 +12,40 @@ namespace Employment.Controllers
     public class RealEstateObjectController : ControllerBase
     {
 
-        [HttpPut]
-        public string Create(string str)
+        [HttpPut("Create")]
+        public bool Create(RealEstateObject realEstateObject)
         {
-            return str;
+            return Storages.RealEstateObjectStorage.Create(realEstateObject); ;
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public EstateАgent Read(int Id)
         {
-            return str;
+            return Storages.RealEstateObjectStorage.Read(Id);
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public EstateАgent Update(RealEstateObject realEstateObject)
         {
-            return str;
+            return Storages.RealEstateObjectStorage.Update(realEstateObject);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.RealEstateObjectStorage.Delete(Id);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.RealEstateObjectStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.RealEstateObjectStorage.ReadFromXmlFile();
         }
 
 

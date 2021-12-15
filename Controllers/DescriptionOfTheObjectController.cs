@@ -12,28 +12,40 @@ namespace Employment.Controllers
     public class DescriptionOfTheObjectController : ControllerBase
     {
 
-        [HttpPut]
-        public string Create(string str)
+        [HttpPut("Create")]
+        public bool Create(DescriptionOfTheObject descriptionOfTheObject)
         {
-            return str;
+            return Storages.DescriptionOfTheObjectStorage.Create(descriptionOfTheObject); ;
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public DescriptionOfTheObject Read(int Id)
         {
-            return str;
+            return Storages.DescriptionOfTheObjectStorage.Read(Id);
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public DescriptionOfTheObject Update(DescriptionOfTheObject descriptionOfTheObject)
         {
-            return str;
+            return Storages.DescriptionOfTheObjectStorage.Update(descriptionOfTheObject);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.DescriptionOfTheObjectStorage.Delete(Id);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.DescriptionOfTheObjectStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.DescriptionOfTheObjectStorage.ReadFromXmlFile();
         }
 
 

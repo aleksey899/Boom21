@@ -12,29 +12,42 @@ namespace Employment.Controllers
     public class MonetaryAccountingController : ControllerBase
     {
 
-        [HttpPut]
-        public string Create(string str)
+        [HttpPut("Create")]
+        public bool Create(MonetaryAccounting monetaryAccounting)
         {
-            return str;
+            return Storages.MonetaryAccountingStorage.Create(monetaryAccounting); ;
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpGet("Read")]
+        public EstateАgent Read(int Id)
         {
-            return str;
+            return Storages.MonetaryAccountingStorage.Read(Id);
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpPut("Update")]
+        public EstateАgent Update(MonetaryAccounting monetaryAccounting)
         {
-            return str;
+            return Storages.MonetaryAccountingStorage.Update(monetaryAccounting);
         }
 
-        [HttpDelete]
-        public string Delete(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.MonetaryAccountingStorage.Delete(Id);
         }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.MonetaryAccountingStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.MonetaryAccountingStorage.ReadFromXmlFile();
+        }
+
 
 
 

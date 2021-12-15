@@ -3,49 +3,44 @@
 namespace Employment.Controllers
 {
     [ApiController]
-    [Route("/SellerController")]
+    [Route("/Seller")]
     public class SellerController : ControllerBase
     {
-        [HttpPost("RealEstatePlacement")]
-        public string RealEstatePlacement(string str)
+
+        [HttpPut("Create")]
+        public bool Create(Seller seller)
         {
-            return str; // размещение недвижимости для продажи
+            return Storages.SellerStorage.Create(seller); ;
         }
 
-        [HttpPost("ProvidesPreview")]
-        public string ProvidesPreview(string str)
+        [HttpGet("Read")]
+        public EstateАgent Read(int Id)
         {
-            return str; // предоставление возможности просмотра недвижимости
+            return Storages.SellerStorage.Read(Id);
         }
 
-        [HttpPost("ConclusionOfTheContract")]
-        public string ConclusionOfTheContract(string str)
+        [HttpPut("Update")]
+        public EstateАgent Update(Seller seller)
         {
-            return str; // заключение договора
+            return Storages.SellerStorage.Update(seller);
         }
 
-        [HttpPut]
-        public string Create(string str)
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
         {
-            return str;
+            return Storages.SellerStorage.Delete(Id);
         }
 
-        [HttpGet]
-        public string Read(string str)
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
         {
-            return str;
+            Storages.SellerStorage.SaveToXmlFile();
         }
 
-        [HttpPatch]
-        public string Update(string str)
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
         {
-            return str;
-        }
-
-        [HttpDelete]
-        public string Delete(string str)
-        {
-            return str;
+            Storages.SellerStorage.ReadFromXmlFile();
         }
     }
 }
