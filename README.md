@@ -115,8 +115,14 @@
 ### 3.2 Реализация системы <a name="реализация"></a>
 
 Реализация системы  начинается с ER-диаграммы создаются классы. 
-
-
+```csharp
+public class AgencyAccount: IIdentifier
+    {
+        public int Id { get; set; }
+        public int AgencyAccountid { get; set;}
+        public int OperationNumber { get; set;}
+    {
+```   
 # 4. Проверка и тестирование системы
 
 <a name="Checkingandtestingthesystem"/>
