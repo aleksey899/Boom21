@@ -95,16 +95,21 @@
 ### 3.1 Проектирование системы <a name="проектирование"></a>
 Проектирование состоит из трех этапов. В этом процессе используются основные идеи системного подхода и в полной мере проявляются его преимущества.  
 
-Разработка начианется с проектрирования USE CASE диаграммы, отображающей основыне лица данной системы: Покупатель, Продавец, Агент по недвижимости.
+- Разработка начианется с проектрирования USE CASE диаграммы, отображающей основыне лица данной системы: Покупатель, Продавец, Агент по недвижимости.
+
 <p align="center">
 <img src="https://user-images.githubusercontent.com/91207739/146191628-3501d616-e136-42ba-9d6e-5116a944bb56.png"></p>
 <p align="center">Рисунок 1 - USE CASE диаграмма</p>
 <a name="Systemdesign"/>
- После на основе  USE CASE диаграммы создаетя диаграмма DFD (Data Flow Diagrams), которая наглядно отображает течение информации в системе.
+ 
+ -После на основе  USE CASE диаграммы создаетя диаграмма DFD (Data Flow Diagrams), которая наглядно отображает течение информации в системе.
+ 
  <p align="center">
 <img src="https://user-images.githubusercontent.com/91207739/146193082-2aacc0ac-390c-4bd8-bbb7-e965206a4703.png"></p>
 <p align="center">Рисунок 2 - DFD диаграмма</p>
- На основе DFD диаграммы создается сущность ER-диаграммы, которая показывает связи в системе.
+ 
+ - На основе DFD диаграммы создается сущность ER-диаграммы, которая показывает связи в системе.Каждая сущность содержит набор параметров с типами данных.
+  
   <p align="center">
 <img src="https://user-images.githubusercontent.com/91207739/146194341-a105a8df-5d2b-4a18-9d8b-7ce67dd95072.png"></p>
 <p align="center">Рисунок 2 - ER-диаграмма</p>
@@ -114,7 +119,8 @@
 
 ### 3.2 Реализация системы <a name="реализация"></a>
 
-Реализация системы  начинается с ER-диаграммы создаются классы. 
+- Реализация системы  начинается с ER-диаграммы создаются классы. 
+
 ```csharp
 public class AgencyAccount: IIdentifier
     {
@@ -122,8 +128,99 @@ public class AgencyAccount: IIdentifier
         public int AgencyAccountid { get; set;}
         public int OperationNumber { get; set;}
     {
-```   
+``` 
+<p align="center">Листинг 1 - Класс "Агент по недвижимости</p>
+
+- Создав репозитории, опредилим где будет хранится.
+
+<p align="center">Листинг 2 - Репозиторий для класса "Агент по недвижимости</p>
+
+```csharp
+public static class Storages
+    {
+        public static Storage<AgencyAccount> AgencyAccountStorage { get; } = new();
+        public static Storage<Customer> CustomerStorage { get; } = new();
+        public static Storage<DescriptionOfTheObject> DescriptionOfTheObjectStorage { get; } = new();
+        public static Storage<EstateАgent> EstateАgentStorage { get; } = new();
+        public static Storage<LogOfRequestsFor> LogOfRequestsForStorage { get; } = new();
+        public static Storage<MonetaryAccounting> MonetaryAccountingStorage { get; } = new();
+        public static Storage<RealEstateObject> RealEstateObjectStorage { get; } = new();
+        public static Storage<Sale> SaleStorage { get; } = new();
+        public static Storage<Seller> SellerStorage { get; } = new();
+        public static Storage<Transaction> TransactionStorage { get; } = new();
+    }
+``` 
+<p align="center">Листинг 2 - Общее хранилище</p>
+
+- Разработали набор web-методов, включая 4 базисные опрации CRUD, для каждой из сущностей, отображающие предметную область.
+
+```csharp
+    public class AgencyAccountController : ControllerBase
+    {
+
+        [HttpPut("Create")]
+        public bool Create(AgencyAccount agencyAccount)
+        {
+            return Storages.AgencyAccountStorage.Create(agencyAccount); ;
+        }
+
+        [HttpGet("Read")]
+        public AgencyAccount Read(int Id)
+        {
+            return Storages.AgencyAccountStorage.Read(Id);
+        }
+
+        [HttpPut("Update")]
+        public AgencyAccount Update(AgencyAccount agencyAccount)
+        {
+            return Storages.AgencyAccountStorage.Update(agencyAccount);
+        }
+
+        [HttpDelete("Delete")]
+        public bool Delete(int Id)
+        {
+            return Storages.AgencyAccountStorage.Delete(Id);
+        }
+
+        [HttpPost("SaveToFile")]
+        public void SaveToFile()
+        {
+            Storages.AgencyAccountStorage.SaveToXmlFile();
+        }
+
+        [HttpGet("ReadFromFile")]
+        public void ReadFromFile()
+        {
+            Storages.AgencyAccountStorage.ReadFromXmlFile();
+        }
+
+    }
+``` 
+<p align="center">Листинг 3 - Контроллер класа "Агент по недвижимости</p>
+
+***
+
 # 4. Проверка и тестирование системы
+
+- При запуске программы открывается сайт Swagger UI со списком сущностей и операций над ними.
+
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/91207739/146259605-51d57ee0-e381-4517-96e6-68ad1b9be5dc.png"></p>
+<p align="center">Рисунок 4 - Cайт Swagger UI</p>
+
+- Проверка работы методов CRUD
+
+ <p align="center">
+<img src="https://user-images.githubusercontent.com/91207739/146260057-38095887-4818-4edc-b2d7-cb4e5b1e2056.png"></p>
+<p align="center">Рисунок 5 -Проверка работы методов CRUD</p>
+
+- Create позволяет добавлять новые данные в таблицу
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/91207739/146260057-38095887-4818-4edc-b2d7-cb4e5b1e2056.png"></p>
+<p align="center">Рисунок 6 -Проверка работы метода Create </p>
+
+
 
 <a name="Checkingandtestingthesystem"/>
 
