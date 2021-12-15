@@ -7,46 +7,47 @@ using Microsoft.Extensions.Logging;
 using Boom21.repository;
 using Boom21.Domains;
 
+
 namespace Employment.Controllers
 {
     [ApiController]
-    [Route("/LogOfRequestsForViews")]
-    public class LogOfRequestsForViewsController : ControllerBase
+    [Route("/LogOfRequestsFor")]
+    public class LogOfRequestsForController : ControllerBase
     {
         [HttpPut("Create")]
-        public bool Create(LogOfRequestsForViews logOfRequestsForViews)
+        public bool Create(LogOfRequestsFor logOfRequestsFor)
         {
-            return Storages.LogOfRequestsForViewsStorage.Create(logOfRequestsForViews); ;
+            return Storages.LogOfRequestsForStorage.Create(logOfRequestsFor); 
         }
 
         [HttpGet("Read")]
         public EstateАgent Read(int Id)
         {
-            return Storages.LogOfRequestsForViewsStorage.Read(Id);
+            return Storages.LogOfRequestsForStorage.Read(Id);
         }
 
         [HttpPut("Update")]
-        public EstateАgent Update(LogOfRequestsForViews logOfRequestsForViews)
+        public EstateАgent Update(LogOfRequestsFor logOfRequestsFor)
         {
-            return Storages.LogOfRequestsForViewsStorage.Update(logOfRequestsForViews);
+            return Storages.LogOfRequestsForStorage.Update(logOfRequestsFor);
         }
 
         [HttpDelete("Delete")]
         public bool Delete(int Id)
         {
-            return Storages.LogOfRequestsForViewsStorage.Delete(Id);
+            return Storages.LogOfRequestsForStorage.Delete(Id);
         }
 
         [HttpPost("SaveToFile")]
         public void SaveToFile()
         {
-            Storages.LogOfRequestsForViewsStorage.SaveToXmlFile();
+            Storages.LogOfRequestsForStorage.SaveToXmlFile();
         }
 
         [HttpGet("ReadFromFile")]
         public void ReadFromFile()
         {
-            Storages.LogOfRequestsForViewsStorage.ReadFromXmlFile();
+            Storages.LogOfRequestsForStorage.ReadFromXmlFile();
         }
 
 

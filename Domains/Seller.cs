@@ -22,12 +22,13 @@ namespace Boom21.Domains
 
         public int HouseId { get; set; }
 
-        Seller(int Sellerid, string FirstName, string LastName, string Phone, int HouseId)
+       public Seller(int sellerid, string firstName, string lastName, string phone, int houseId, int id)
         {
-            this.Sellerid = Sellerid;
-            this.FirstName = FirstName;
-            this.Phone = Phone;
-            this.HouseId = HouseId;
+            Sellerid = sellerid;
+            FirstName = firstName;
+            Phone = phone;
+            HouseId = houseId;
+            Id =  id;
         }
 
 

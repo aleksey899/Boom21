@@ -20,12 +20,13 @@ namespace Boom21.Domains
 
         public int EstateАgentId { get; set; }
 
-        public Sale (int cadastralNumber, int customerId, string location, int estateАgentId, int Id)
+        public Sale (int cadastralNumber, int customerId, string location, int estateАgentId, int id)
         {
             CadastralNumber = cadastralNumber;
             CustomerId = customerId;
             Location = location;
             EstateАgentId = estateАgentId;
+            Id = id;
             
         }
 

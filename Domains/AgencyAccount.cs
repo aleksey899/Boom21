@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Boom21.repository;
+using Boom21.repository; 
 
 namespace Boom21.Domains
 {
@@ -17,10 +17,11 @@ namespace Boom21.Domains
         public int OperationNumber { get; set; }
 
 
-        public AgencyAccount(int agencyAccountid, int operationNumber, int Id)
+        public AgencyAccount(int agencyAccountid, int operationNumber, int id)
         {
             AgencyAccountid = agencyAccountid;
             OperationNumber = operationNumber;
+            Id = id;
 
         }
 

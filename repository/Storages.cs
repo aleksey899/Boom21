@@ -1,4 +1,9 @@
 ﻿using Boom21.Domains;
+using System.Xml.Serialization;
+
+
+
+
 
 namespace Boom21.repository
 {

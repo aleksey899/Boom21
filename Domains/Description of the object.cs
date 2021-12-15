@@ -22,13 +22,14 @@ namespace Boom21.Domains
 
         public int SellerId { get; set; }
 
-        DescriptionOfTheObject(int DescriptionOfTheObjectt, decimal Prise, string Feature, int Photo, int SellerId)
+        public DescriptionOfTheObject(int descriptionOfTheObjectt, decimal prise, string feature, int photo, int sellerId, int id)
         {
-            this.DescriptionOfTheObjectt = DescriptionOfTheObjectt;
-            this.Prise = Prise;
-            this.Feature = Feature;
-            this.Photo = Photo;
-            this.SellerId = SellerId;
+           DescriptionOfTheObjectt = descriptionOfTheObjectt;
+            Prise = prise;
+            Feature = feature;
+            Photo = photo;
+            SellerId = sellerId;
+            Id = id;
         }
 
 

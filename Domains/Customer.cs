@@ -22,12 +22,13 @@ namespace Boom21.Domains
 
         public string RealEstatePreference { get; set; }
 
-        Customer(int Customerid, string FirstName, string LastName, string Phone, string RealEstatePreference)
+        Customer(string lastname,int customerid, string firstName, string lastName, string phone, string realEstatePreference, int Id)
         {
-            this.Customerid = Customerid;
-            this.FirstName = FirstName;
-            this.Phone = Phone;
-            this.RealEstatePreference = RealEstatePreference;
+            Customerid = customerid;
+            FirstName = firstName;
+            Phone = phone;
+            RealEstatePreference = realEstatePreference;
+            LastName = lastname;
         }
 
 

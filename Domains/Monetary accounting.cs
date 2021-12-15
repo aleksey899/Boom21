@@ -20,12 +20,13 @@ namespace Boom21.Domains
 
         public int AgencyAccountid { get; set; }
 
-        MonetaryAccounting(int Balanceid, decimal Debit, decimal Сredit, int AgencyAccountid)
+        public MonetaryAccounting(int balanceid, decimal debit, decimal credit, int agencyAccountid, int id)
         {
-            this.Balanceid = Balanceid;
-            this.Debit = Debit;
-            this.Сredit = Сredit;
-            this.AgencyAccountid = AgencyAccountid;
+            Balanceid = balanceid;
+            Debit = debit;
+            Сredit = credit;
+            AgencyAccountid = agencyAccountid;
+            Id = id;
         }
 
 

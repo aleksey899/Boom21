@@ -18,12 +18,12 @@ namespace Boom21.Domains
 
         public decimal Balance { get; set; }
 
-        public Transaction(int transactionid, int operationLog, decimal balance)
+        public Transaction(int transactionid, int operationLog, decimal balance, int id)
         {
-            this.Transactionid = Transactionid;
-            this.OperationLog = OperationLog;
-            this.Balance = Balance;
-            
+            Transactionid = transactionid;
+            OperationLog = operationLog;
+            Balance = balance;
+            Id = id;
         }
 
 

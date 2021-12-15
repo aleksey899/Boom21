@@ -7,8 +7,10 @@ namespace Boom21.repository
 {
     public class Storage<TIdentifier> where TIdentifier : IIdentifier
     {
-        private static readonly string Path = typeof(TIdentifier).Name + ".xml";
+        private static readonly string Path = "Storages/" + typeof(TIdentifier).Name + "s.xml";
         private List<TIdentifier> _storage = new();
+
+        public Storage() { }
 
         public void ReadFromXmlFile()
         {

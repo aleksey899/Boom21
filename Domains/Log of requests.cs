@@ -20,12 +20,13 @@ namespace Boom21.Domains
 
         public int SellerId { get; set; }
 
-        LogOfRequestsFor(int EstateАgentid, int ListClientId, int CustomerId, int SellerId)
+        public LogOfRequestsFor(int estateАgentid, int listClientId, int customerId, int sellerId, int id)
         {
-            this.ListClientId = ListClientId;
-            this.EstateАgentId = EstateАgentId;
-            this.CustomerId = CustomerId;
-            this.SellerId = SellerId;
+            ListClientId = listClientId;
+            EstateАgentId = estateАgentid;
+            CustomerId = customerId;
+            SellerId = sellerId;
+            Id = id;
         }
 
 
