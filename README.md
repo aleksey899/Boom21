@@ -121,6 +121,8 @@
 
 - Реализация системы  начинается с ER-диаграммы создаются классы. 
 
+Листинг 1 - Класс "Агент по недвижимости.
+
 ```csharp
 public class AgencyAccount: IIdentifier
     {
@@ -129,11 +131,12 @@ public class AgencyAccount: IIdentifier
         public int OperationNumber { get; set;}
     {
 ``` 
-<p align="center">Листинг 1 - Класс "Агент по недвижимости</p>
+<p align="center">
 
 - Создав репозитории, опредилим где будет хранится.
+ 
+ Листинг 2 - Общее хранилище.
 
-<p align="center">Листинг 2 - Репозиторий для класса "Агент по недвижимости</p>
 
 ```csharp
 public static class Storages
@@ -150,9 +153,11 @@ public static class Storages
         public static Storage<Transaction> TransactionStorage { get; } = new();
     }
 ``` 
-<p align="center">Листинг 2 - Общее хранилище</p>
+<p align="center">
 
 - Разработали набор web-методов, включая 4 базисные опрации CRUD, для каждой из сущностей, отображающие предметную область.
+ 
+ Листинг 3 - Контроллер класа "Агент по недвижимости".
 
 ```csharp
     public class AgencyAccountController : ControllerBase
@@ -196,7 +201,7 @@ public static class Storages
 
     }
 ``` 
-<p align="center">Листинг 3 - Контроллер класа "Агент по недвижимости</p>
+<p align="center">
 
 ***
 
