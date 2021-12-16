@@ -14,6 +14,8 @@ namespace Employment.Controllers
     [Route("/LogOfRequestsFor")]
     public class LogOfRequestsForController : ControllerBase
     {
+
+
         [HttpPut("Create")]
         public bool Create(LogOfRequestsFor logOfRequestsFor)
         {

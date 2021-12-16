@@ -14,6 +14,29 @@ namespace Employment.Controllers
     [Route("/AgencyAccount")]
     public class AgencyAccountController : ControllerBase
     {
+        [HttpPost("CreateResume")]
+        public string CreateResume(string str)
+        {
+            return str;// создать резюме
+        }
+
+        [HttpGet("ViewVacancies")]
+        public string ViewVacancies(string str)
+        {
+            return str;// просмотр вакансий
+        }
+
+        [HttpPost("SendRequest")]
+        public string SendRequest(string str)
+        {
+            return str;// отправление заявки
+        }
+
+        [HttpGet("ViewResponse")]
+        public string ViewResponse(string str)
+        {
+            return str;// просмотреть ответ
+        }
 
         [HttpPut("Create")]
         public bool Create(AgencyAccount agencyAccount)
